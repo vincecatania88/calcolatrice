@@ -1,109 +1,23 @@
 #display {
     text-align: right;
-    border-radius: 10px;
-    color: #FFFFFF;
+    background-color: #000;
+    color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
 }
 
-#display div {
-    font-size: 45px;
-    padding: 10px;
+button {
+    font-size: 1.2rem;
 }
-
-input, button {
-    border-radius: 50px;
-    font-size: 30px;
-    padding: 10px 20px;
-    border: none;
-}
-
 .calcolatrice {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    width: 250px;
-    border: solid;
-    background-color: #000000;
+    max-width: 320px;
+    margin: 0 auto;
+    background-color: #212529;
     padding: 20px;
-    border-radius: 24px;
+    border-radius: 16px;
+    color: #fff;
 }
 
-.row {
-    display: flex;
-    justify-content: end;
-    gap: 5px;
-}
 
-.row-one .operatore {
-    padding: 10px 22px;
-}
-
-.row-one #clear {
-    padding: 10px 16px;
-}
-
-.row-two .operatore {
-    padding: 10px 18px;
-}
-
-.row-three .operatore, #virgola {
-    padding: 10px 24px;
-}
-
-.numero, #virgola {
-    background-color: #606060;
-    color: #FFFFFF;
-    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
-}
-.operatore {
-    background-color: #ffb300;
-    color: #FFFFFF;
-    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
-}
-
-#clear {
-    background-color: #9d9d9d;
-    color: #FFFFFF;
-    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
-}
-
-.numero:hover, #virgola:hover {
-    background-color: #b5b5b5;
-    transition: 0.5s ease-in-out;
-}
-
-.operatore:hover {
-    background-color: #ffdc8b;
-    transition: 0.5s ease-in-out;
-}
-
-#clear:hover {
-    background-color: #cecece;
-    transition: 0.5s ease-in-out;
-}
-
-@media (max-width: 425px) {
-    .calcolatrice {
-        height: 100vh;
-        width: 90%;
-    }
-
-    #display div {
-        font-size: 110px;
-        padding: 10px;
-    }
-
-    input, button {
-        border-radius: 60px;
-        font-size: 50px;
-        padding: 10px 25px;
-        border: none;
-    }
-
-    .row-one .operatore, .row-three .operatore, #virgola {
-        padding: 10px 32px;
-    }
-    
-    .row-two .operatore, .row-one #clear {
-        padding: 10px 22px;
-    }
-}
